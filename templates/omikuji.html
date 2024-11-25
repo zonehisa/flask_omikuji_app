@@ -9,6 +9,15 @@
 
 <body>
     <p>今日の運勢は ... {{ result }}</p>
+
+    {% if result == "大吉！" %}
+        <p>やったね！</p>
+    {% elif result == "中吉" %}
+        <p>まあまあ</p>
+    {% else %}
+        <p>ざんねん！</p>
+    {% endif %}
+
 </body>
 
 </html>
